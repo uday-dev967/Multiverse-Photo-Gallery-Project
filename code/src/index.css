@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #242629;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+body .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(43rem, 1fr));
+}
+body .gallery-container .img-container {
+  width: 100%;
+  position: relative;
+  margin: 0rem;
+  padding: 0rem;
+}
+body .gallery-container .img-container .gallery-image {
+  width: 100%;
+}
+body .gallery-container .img-container .title {
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  left: 0.5rem;
+}
+body .gallery-container .img-container .title::first-letter {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=index.css.map */

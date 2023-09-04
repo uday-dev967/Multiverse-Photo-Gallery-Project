@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-primary: #242629;
+
+html {
+  font-size: 100% * 0.625;
+}
+body {
+  background-color: $color-primary;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(43rem, 1fr));
+    .img-container {
+      width: 100%;
+      position: relative;
+      margin: 0rem;
+      padding: 0rem;
+      .gallery-image {
+        width: 100%;
+      }
+      .title {
+        color: #fff;
+        position: absolute;
+        bottom: 1rem;
+        left: 0.5rem;
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
